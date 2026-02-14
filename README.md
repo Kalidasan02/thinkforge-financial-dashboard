@@ -1,16 +1,49 @@
-# React + Vite
+ Think Forge Financial Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive financial dashboard built using React (Vite) .
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Live Demo
 
-## React Compiler
+🔗 Hosted URL: https://thinkforge-financial-dashboard.vercel.app/ 
+🔗 GitHub Repository: https://github.com/Kalidasan02/thinkforge-financial-dashboard
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- Recharts (for charts)
+- CSS (Custom styling)
+- Responsive Design (Media Queries)
+- Git & GitHub
+- Vercel (Deployment)
+
+
+📌 Features
+
+- Clean and modern financial dashboard UI
+- Fully responsive layout
+- Interactive wallet chart
+- Transaction history section
+- Account selection with active state
+- Proper component structure
+- Reusable components
+
+
+Clone the repository: git clone https://github.com/Kalidasan02/thinkforge-financial-dashboard.git
+Navigate to project folder: cd thinkforge-financial-dashboard
+
+Install dependencies: npm install
+Run locally: npm run dev
+Build for production:npm run build
+
+Project Structure
+src/
+ ├── components/
+ │   ├── dashboard/
+ │   ├── layout/
+ │   └── common/
+ ├── data/
+ ├── pages/
+ └── styles/
+
