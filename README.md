@@ -36,7 +36,9 @@ Clone the repository: git clone https://github.com/Kalidasan02/thinkforge-financ
 Navigate to project folder: cd thinkforge-financial-dashboard
 
 Install dependencies: npm install
+
 Run locally: npm run dev
+
 Build for production:npm run build
 
 
