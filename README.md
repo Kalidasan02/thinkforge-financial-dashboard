@@ -32,6 +32,7 @@ A responsive financial dashboard built using React (Vite) .
 
 
 Clone the repository: git clone https://github.com/Kalidasan02/thinkforge-financial-dashboard.git
+
 Navigate to project folder: cd thinkforge-financial-dashboard
 
 Install dependencies: npm install
