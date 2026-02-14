@@ -7,7 +7,8 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import React from "react";
+
+
 
 const data = Array.from({ length: 90 }, (_, i) => ({
   name: i + 1,
@@ -28,7 +29,7 @@ const WalletChart = () => {
       <ResponsiveContainer width="100%" height={260}>
         <BarChart
           data={data}
-          margin={{ top: 10, right: 10, left: 11, bottom: 0 }}
+          margin={{ top: 10, right: 20, left: 14, bottom: 30 }}
         >
           <CartesianGrid
             stroke="#1f2937"
@@ -41,7 +42,7 @@ const WalletChart = () => {
             tick={{ fill: "#6b7280", fontSize: 12 }}
             axisLine={false}
             tickLine={false}
-            interval={14}
+            interval={10}
             tickFormatter={(value) => {
               const labels = [
                 "Apr 9",
