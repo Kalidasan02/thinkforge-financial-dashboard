@@ -6,6 +6,7 @@ A responsive financial dashboard built using React (Vite) .
 🚀 Live Demo
 
 🔗 Hosted URL: https://thinkforge-financial-dashboard.vercel.app/ 
+
 🔗 GitHub Repository: https://github.com/Kalidasan02/thinkforge-financial-dashboard
 
 
@@ -37,13 +38,5 @@ Install dependencies: npm install
 Run locally: npm run dev
 Build for production:npm run build
 
-Project Structure
-src/
- ├── components/
- │   ├── dashboard/
- │   ├── layout/
- │   └── common/
- ├── data/
- ├── pages/
- └── styles/
+
 
