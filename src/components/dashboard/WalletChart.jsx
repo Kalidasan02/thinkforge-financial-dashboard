@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -16,6 +17,20 @@ const data = Array.from({ length: 90 }, (_, i) => ({
 }));
 
 const WalletChart = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Adjust interval and font size based on screen width
+  const isMobile = windowWidth < 768;
+  const interval = isMobile ? 17 : 10;
+  const fontSize = isMobile ? 10 : 12;
+  const bottomMargin = isMobile ? 35 : 30;
+
   return (
     <div className="chart-card">
       <div className="chart-header">
@@ -29,7 +44,7 @@ const WalletChart = () => {
       <ResponsiveContainer width="100%" height={260}>
         <BarChart
           data={data}
-          margin={{ top: 10, right: 20, left: 14, bottom: 30 }}
+          margin={{ top: 10, right: 20, left: 14, bottom: bottomMargin }}
         >
           <CartesianGrid
             stroke="#1f2937"
@@ -39,10 +54,10 @@ const WalletChart = () => {
 
           <XAxis
             dataKey="name"
-            tick={{ fill: "#6b7280", fontSize: 12 }}
+            tick={{ fill: "#6b7280", fontSize: fontSize }}
             axisLine={false}
             tickLine={false}
-            interval={10}
+            interval={interval}
             tickFormatter={(value) => {
               const labels = [
                 "Apr 9",
